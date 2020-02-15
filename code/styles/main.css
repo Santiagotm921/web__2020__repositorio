@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;  
+}
+
+body, html {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;    
+}
+
+.container b{
+    cursor: pointer;
+}
+
+.menu{
+    background: rgb(170,4,0);
+    background: linear-gradient(191deg, rgba(170,4,0,1) 0%, rgba(255,25,40,1) 100%);
+    height: 500px;
+    width: 100%;
+   
+   
+}
+
+.menu__container{
+    margin: 0px 20px;
+    padding: 40px 10px;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 100%;
+}
+/* --- Search --- */
+
+.menu__searcher{
+    display: flex;
+    margin-right: 100px;    
+}
+
+.menu__seacrher--container{
+    width: 170px;
+    height: 35px;
+    border: 2px solid white;
+}
+
+::placeholder{
+    color: white;
+    opacity: 60%;
+}
+
+.menu__searcher--search{
+    font-family: 'Montserrat', sans-serif;
+    width: 135px;
+    height: 35px;
+    background: transparent;
+    padding: 12px 10px;
+    border: none;
+    color: white;
+    outline: none;
+    position: absolute;
+    
+}
+
+.menu__searcher--icon{
+    width: 25px;
+    height: 25px;
+    margin: 3px 5px;
+}
+
+/* --- Search --- */
+
+.menu__logo{
+    width: 50px;
+}
+
+.menu--shoe--bars{
+    position: absolute;
+    margin: 13px 55px;
+}
+
+.menu__shoe--myshoe{
+    position: absolute;
+    width: 1000px;
+    left: -130px;
+    top: 40px;
+}
+
+/* 
+
+*/
+
