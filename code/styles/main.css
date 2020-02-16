@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body, html {
@@ -12,7 +11,7 @@ body, html {
 
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 60%;
 }
 
 .container b {
@@ -24,14 +23,13 @@ body, html {
   background: linear-gradient(191deg, #aa0400 0%, #ff1928 100%);
   height: 500px;
   width: 100%;
-
 }
 
 .menu__container {
     margin: 0px 20px;
     padding: 40px 10px;
     color: white;
-    height: 60px;
+    height: 0%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -122,20 +120,39 @@ header label:hover {
 }
 
 /* --- Search --- */
+
 .menu__logo {
   width: 50px;
 }
 
-.menu--shoe--bars {
-    position: absolute;
-    margin: 13px 55px;
+.menu__shoe--texts{
+  margin: 0px;
 }
 
+.menu__shoe{
+    display: flex;
+    height: 570px;
+    color: white;
+    
+}
+
+.menu__shoe h1{
+    font-size: 3em;
+    margin: 0;
+    margin: 100px 0px 0px 0px;
+}
+    
+
 .menu__shoe--myshoe {
-  position: absolute;
-  max-width: 1000px; min-width: 750px;
+
+  /*position: absolute; 
+  left: -55px;
+  */
+  max-width: 700px; 
+  min-width: 500px;
   width: 100%;
-  left: -130px; top: 50px;
+  top: 55px;
+  
 }
 
 /* --- Medias --- */
@@ -146,9 +163,15 @@ header label:hover {
   }
   .menu__hamburger {
     position: absolute;
-    width: 70%;
     margin-left: -70%;
     transition: all .2s;
+    background: black;
+    left: 0px;
+    width: 50%;
+  }
+
+  .menu__searcher{
+    margin-right: 0px;
   }
 
   .menu__hamburger ul {
@@ -159,8 +182,14 @@ header label:hover {
     justify-content: space-around;
     flex-direction: row-reverse;
   }
+
   #btn-menu:checked ~ .menu__hamburger {
     margin: 0;
     margin-top: 130px;
+  }
+
+  .menu__shoe{
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
