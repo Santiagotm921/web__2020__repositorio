@@ -126,7 +126,10 @@ header label:hover {
 }
 
 .menu__shoe--texts{
-  margin: 0px;
+  background: aqua;
+  margin: 100px 0px 0px 0px;
+  padding: 20px;
+  width: 600px;
 }
 
 .menu__shoe{
@@ -139,7 +142,11 @@ header label:hover {
 .menu__shoe h1{
     font-size: 3em;
     margin: 0;
-    margin: 100px 0px 0px 0px;
+    /*margin: 100px 0px 0px 0px; */
+}
+
+.menu__shoe h2{
+  margin: 10px 0;
 }
     
 
@@ -155,6 +162,10 @@ header label:hover {
   
 }
 
+.menu__hamburger li:hover{
+  background: #aa0400;
+}
+
 /* --- Medias --- */
 @media (max-width: 930px) {
 
@@ -167,7 +178,6 @@ header label:hover {
     transition: all .2s;
     background: black;
     left: 0px;
-    width: 50%;
   }
 
   .menu__searcher{
@@ -191,5 +201,10 @@ header label:hover {
   .menu__shoe{
     flex-wrap: wrap;
     flex-direction: row;
+  }
+
+  .menu__shoe--texts{
+    margin:0px;
+    width: 100%;
   }
 }
