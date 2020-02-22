@@ -16,6 +16,10 @@ body, html {
       -ms-flex-align: center;
           align-items: center;
   width: 60%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 20px;
 }
 
 .container b {
@@ -23,7 +27,6 @@ body, html {
 }
 
 .menu__container {
-  margin: 0px 20px;
   padding: 20px 10px;
   color: white;
   height: 0%;
@@ -185,6 +188,12 @@ header label:hover {
   top: 55px;
 }
 
+.menu {
+  background: #aa0400;
+  background: linear-gradient(191deg, #aa0400 0%, #ff1928 100%);
+  width: 100%;
+}
+
 .menu__hamburger li:hover {
   background: #aa0400;
 }
@@ -203,7 +212,7 @@ header label:hover {
     left: 0px;
   }
   .searcher {
-    margin-right: 0px;
+    margin-right: 30px;
   }
   .menu__hamburger ul {
     -webkit-box-orient: vertical;
@@ -222,6 +231,7 @@ header label:hover {
   #btn-menu:checked ~ .menu__hamburger {
     margin: 0;
     margin-top: 130px;
+    width: 40%;
   }
   .bannershoe {
     -ms-flex-wrap: wrap;
@@ -237,9 +247,80 @@ header label:hover {
   }
 }
 
-.menu {
-  background: #aa0400;
-  background: linear-gradient(191deg, #aa0400 0%, #ff1928 100%);
+.mainnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin: 0px 20px;
+}
+
+.mainnav--mobile {
+  position: absolute;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainnav__link {
+  padding: 5px 7px;
+}
+
+.mainnav__search {
+  margin-left: auto;
+}
+
+.mainnav a {
+  text-decoration: none;
+  color: white;
+  margin: 0px 8px;
+}
+
+.mainnav a:hover {
+  background: #810200;
+}
+
+@media (max-width: 930px) {
+  .mainnav {
+    display: none;
+  }
+}
+
+.hamburguerbtn {
+  background: none;
+  width: 50px;
+  height: 41px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  outline: none;
+}
+
+.hamburguerbtn span {
+  height: 3px;
   width: 100%;
+  background-color: white;
+}
+
+@media (max-width: 930px) {
+  .hamburguerbtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=main.css.map */
