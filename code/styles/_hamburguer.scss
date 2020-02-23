@@ -10,6 +10,10 @@ $breakpoint-sm: 930px;
         position: absolute;
         display: flex !important;
         flex-direction: column;
+        background: black;
+        top: 68px;
+        left: -30px;
+        width: 50%;
     }
 
     &__link{
