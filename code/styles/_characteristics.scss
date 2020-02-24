@@ -1,0 +1,36 @@
+$myRed: #aa0400;
+
+.characteristics{
+    background: $myRed;
+    background: linear-gradient(191deg, $myRed 0%, #ff1928 100%);
+    display: flex;
+
+    img{
+        position: relative;
+        margin-top: -3px;
+        max-width: 70%;
+        min-width: 30%;
+    }
+
+    span{
+        width: 25%;
+    }
+
+    &__texts{
+        
+    }
+
+    li{
+        color: white;
+    }
+}
+
+@media (max-width: 930px) {
+
+    .characteristics{
+        img{
+            display: none;
+        }
+    }
+    
+}
