@@ -12,17 +12,31 @@ $myRed: #aa0400;
         min-width: 30%;
     }
 
-    span{
-        width: 25%;
+    h2{
+        color: white;
     }
 
-    &__texts{
-        
+    span{
+       
+        text-align: right;
+        padding: 10px;
+        width: 30%;
     }
 
     li{
+        margin-bottom: 15px;
         color: white;
     }
+
+    &__texts{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    &__texts2{
+        margin-top: 117px;
+    }
+
 }
 
 @media (max-width: 930px) {
@@ -31,6 +45,23 @@ $myRed: #aa0400;
         img{
             display: none;
         }
+       span{   
+
+        width: 100%;
+        margin: 10px;
+       }
+
+       &__texts{
+        margin-top: 0px;
+    }
+
+    &__li{
+        
+        column-count: 2;
+        text-align: justify;
+        
+    }
+
     }
     
 }

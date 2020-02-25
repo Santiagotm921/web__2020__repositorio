@@ -23,19 +23,33 @@ $myRed: #aa0400;
 
     article{
         display: flex;
-        margin: 0px 10px;
+        margin: 0px 5px;
     }
 
 
     span{
-        font-size: 15px;
-        padding: 20px;
+        font-size: 14px;
+        padding: 11px;
         color: white;
-        width: 25%;
+        width: 22%;
         height: 250px;
         position: absolute;
-    } 
+    }
+
+    .redColor{
+        width: 103%;
+        height: 96%;
+        margin: -11px;
+        position: absolute;
+        background: $myRed;
+    }
+
+    .span:hover{
+        opacity: 25%;
+    }
 }
+
+
 
 @media (max-width: 930px) {
 

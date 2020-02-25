@@ -348,16 +348,28 @@ body, html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px 10px;
+  margin: 0px 5px;
 }
 
 .slide span {
-  font-size: 15px;
-  padding: 20px;
+  font-size: 14px;
+  padding: 11px;
   color: white;
-  width: 25%;
+  width: 22%;
   height: 250px;
   position: absolute;
+}
+
+.slide .redColor {
+  width: 103%;
+  height: 96%;
+  margin: -11px;
+  position: absolute;
+  background: #aa0400;
+}
+
+.slide .span:hover {
+  opacity: 25%;
 }
 
 @media (max-width: 930px) {
@@ -458,17 +470,45 @@ body, html {
   min-width: 30%;
 }
 
+.characteristics h2 {
+  color: white;
+}
+
 .characteristics span {
-  width: 25%;
+  text-align: right;
+  padding: 10px;
+  width: 30%;
 }
 
 .characteristics li {
+  margin-bottom: 15px;
   color: white;
+}
+
+.characteristics__texts {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.characteristics__texts2 {
+  margin-top: 117px;
 }
 
 @media (max-width: 930px) {
   .characteristics img {
     display: none;
+  }
+  .characteristics span {
+    width: 100%;
+    margin: 10px;
+  }
+  .characteristics__texts {
+    margin-top: 0px;
+  }
+  .characteristics__li {
+    -webkit-column-count: 2;
+            column-count: 2;
+    text-align: justify;
   }
 }
 /*# sourceMappingURL=main.css.map */
