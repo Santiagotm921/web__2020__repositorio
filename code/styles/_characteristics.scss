@@ -12,12 +12,12 @@ $myRed: #aa0400;
         min-width: 30%;
     }
 
-    h2{
+    h1{
+        font-size: 1.6em;
         color: white;
     }
 
     span{
-       
         text-align: right;
         padding: 10px;
         width: 30%;
@@ -56,9 +56,9 @@ $myRed: #aa0400;
     }
 
     &__li{
-        
+        text-align: right;
         column-count: 2;
-        text-align: justify;
+        column-gap: 3px;
         
     }
 

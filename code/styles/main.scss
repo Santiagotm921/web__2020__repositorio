@@ -5,8 +5,12 @@ $myRed: #aa0400;
 }
 
 body, html {
+ 
   margin: 0;
+  font-size: 16px;
   font-family: 'Montserrat', sans-serif;
+  
+
 }
 
 .container {
@@ -88,7 +92,7 @@ body, html {
 
     &__myshoe{
       /*position: absolute;  left: -55px; max-width: 700px; */
-      min-width: 500px;
+      min-width: 300px;
       max-width: 700px;
       width: 100%;
       top: 55px;
@@ -115,6 +119,11 @@ body, html {
       outline: none;
       color: white;
       margin: 10px 0px;
+    }
+
+    &__button:hover{
+      background: white;
+      color: $myRed;
     }
 }
 
@@ -146,12 +155,8 @@ body, html {
       margin: 0;
     }
 
-    p{
-      font-size: 1.0rem;
-    }
-
     img{
-      min-width: 30px;
+      max-width: 100px;
       width: 200px;
       justify-content: center;
     }
@@ -198,3 +203,5 @@ body, html {
 @import 'hamburguer';
 @import 'especific';
 @import 'characteristics';
+@import 'changeColor';
+@import 'videos';

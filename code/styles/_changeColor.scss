@@ -1,0 +1,90 @@
+$myRed: #aa0400;
+
+.changeColor{
+    display: flex;
+
+    &__container{
+        display: flex;
+    
+    img{
+        width: 45%;
+        position: relative;
+        max-width: 70%;
+        min-width: 60%;
+        margin-top: -70px;
+    }
+}
+
+&__edits{
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button{
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            background-color: aqua;
+            border-radius: 100px;
+            outline: none;
+        }
+    }
+
+    .size{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button{
+            font-size: 19px;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            background: none;
+            border-radius: 100px;
+            border: none;
+            color: gray;
+            outline: none;
+        }
+    }
+}
+
+
+&__texts{
+    width: 50%;
+    text-align: right;
+    padding: 20px;
+
+    p{
+        color:grey;       
+    }
+
+    h1{
+        color: $myRed;
+        font-size: 2.2rem;
+    }
+}
+
+}
+
+@media (max-width: 930px) {
+
+    .changeColor__container{
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img{
+            justify-content: center;
+        }
+
+    }
+
+    .changeColor__texts{
+        text-align: center;
+        margin-top: -60px;
+        width: 85%;
+    }
+
+}
