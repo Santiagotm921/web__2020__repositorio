@@ -1,13 +1,11 @@
 $myRed: #aa0400;
 
 .characteristics{
-    background: $myRed;
-    background: linear-gradient(191deg, $myRed 0%, #ff1928 100%);
+    background: black;
     display: flex;
 
     img{
         position: relative;
-        margin-top: -3px;
         max-width: 70%;
         min-width: 30%;
     }

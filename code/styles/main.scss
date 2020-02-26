@@ -122,21 +122,22 @@ body, html {
     }
 
     &__button:hover{
-      background: white;
-      color: $myRed;
+      background: black;
+      color: white;
+      border: none;
     }
 }
 
 .publicity{
     /*background: aqua; */
     display: flex;
-    margin: 20px;
+    margin: 0px 20px;
     margin-top: -55px;
     color: $myRed;
 
     &__shoe{
       display: flex;
-      background: #eceff1;
+      background: white;
       width: auto;
       align-items: center;
       justify-content: space-between;
@@ -144,7 +145,8 @@ body, html {
     }
 
     &__shoe:hover{
-      border: solid black 2px;
+      background: black;
+      color: white;
     }
 
     &__text{
@@ -156,8 +158,8 @@ body, html {
     }
 
     img{
-      max-width: 100px;
-      width: 200px;
+      min-width: 50px;
+      width: 270px;
       justify-content: center;
     }
 
@@ -171,6 +173,8 @@ body, html {
 
   .searcher{
     margin-right: 30px;
+
+    
   }
 
   .container {
@@ -205,3 +209,4 @@ body, html {
 @import 'characteristics';
 @import 'changeColor';
 @import 'videos';
+@import 'register';
