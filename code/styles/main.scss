@@ -1,5 +1,6 @@
 $myRed: #aa0400;
 
+
 * {
   box-sizing: border-box;
 }
@@ -42,9 +43,9 @@ body, html {
   }
 }
 
+
 .searcher {
   display: flex;
-  margin-right: 100px;
 
   &__container{
     width: 170px;
@@ -151,6 +152,7 @@ body, html {
 
     &__text{
       margin-left: 20px;
+      padding: 5px;
     }
 
     h2{
@@ -170,12 +172,6 @@ body, html {
   }
 
 @media (max-width: 930px) {
-
-  .searcher{
-    margin-right: 30px;
-
-    
-  }
 
   .container {
     justify-content: space-around;

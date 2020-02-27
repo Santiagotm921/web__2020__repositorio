@@ -53,7 +53,6 @@ body, html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 100px;
 }
 
 .searcher__container {
@@ -183,6 +182,7 @@ body, html {
 
 .publicity__text {
   margin-left: 20px;
+  padding: 5px;
 }
 
 .publicity h2 {
@@ -202,9 +202,6 @@ body, html {
 }
 
 @media (max-width: 930px) {
-  .searcher {
-    margin-right: 30px;
-  }
   .container {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -329,7 +326,7 @@ body, html {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 0px 30px;
+  margin: 10px 30px;
 }
 
 .slides input {
@@ -357,10 +354,9 @@ body, html {
 
 .slide span {
   font-size: 14px;
-  padding: 11px;
+  padding: 9px;
   color: white;
   width: 22%;
-  height: 250px;
   position: absolute;
 }
 
@@ -618,17 +614,27 @@ body, html {
   }
 }
 
-.videos {
-  margin: 0px 20px;
-}
-
 .videos iframe {
-  max-width: 560px;
-  min-width: 100px;
+  width: 100%;
+  min-width: 10px;
+  height: 600px;
+  margin-bottom: 15px;
 }
 
-.images {
+.videos__images {
   width: 100%;
+}
+
+.myvideos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 img {
@@ -636,9 +642,33 @@ img {
   min-width: 10%;
 }
 
+@media (max-width: 930px) {
+  .myvideos {
+    display: none;
+  }
+}
+
 .register {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: black;
   width: 100%;
-  height: 100px;
+  color: white;
+  margin: auto;
+}
+
+.register form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.register input {
+  background: red;
+  width: 50%;
 }
 /*# sourceMappingURL=main.css.map */
