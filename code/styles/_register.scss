@@ -1,17 +1,49 @@
 .register{
 
-    justify-content: center;
+    display: flex;
+    text-align: center;
     background: black;
     width: 100%;
     color: white;
     margin: auto;
+    flex-direction: column;
 
-    form{
+    .register__container{
+        width: 100%;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
     }
-    input{
-        background: red;
+    .register__camps{
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 10px;
+        color: white;
+        font-size: 18px;
+        background: none;
         width: 50%;
+        outline: none;
+        height: 60px;
+        padding: 0px 10px;
+        border: solid white 3px;
+    }
+
+    .register__other{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+
+
+        input{
+            display: flex;
+            width: 47%;
+        }
+    }
+
+
+    .register__button{
+        font-family: 'Montserrat', sans-serif;
+        width: 50%;
+        height: 60px;
     }
 }

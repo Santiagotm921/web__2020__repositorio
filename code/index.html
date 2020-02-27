@@ -251,16 +251,17 @@
 
     <article class="register">
         <h1>REGISTRO</h1>
-        <form action="">
-            <p>Nombre:</p>
-            <input type="text" class="field">
 
-            <p>Apellido:</p>
-            <input type="text" class="field">
-
-            <p>Correo Electrónico</p>
-            <input type="text" class="field">
-        </form>
+        <div class="register__container">
+            <input type="text" placeholder="Nombre:" class="register__camps">
+            <input type="text" placeholder="Apellido:" class="register__camps">
+            <input type="text" placeholder="Correo:" class="register__camps">
+            <div class="register__other">
+                <input type="text" placeholder="Contraseña:" class="register__camps">
+                <input type="text" placeholder="Repite tu contraseña:" class="register__camps">
+            </div>
+            <button class="register__button">Continuar</button>
+        </div>
 
     </article>
 
