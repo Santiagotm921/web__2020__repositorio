@@ -377,7 +377,7 @@ body, html {
 }
 
 .characteristics {
-  background: black;
+  background: #aa0400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,9 +471,24 @@ body, html {
   cursor: pointer;
   width: 30px;
   height: 30px;
-  background-color: aqua;
   border-radius: 100px;
   outline: none;
+}
+
+.changeColor__edits .buttons--red {
+  background-color: #aa0400;
+}
+
+.changeColor__edits .buttons--white {
+  background-color: white;
+}
+
+.changeColor__edits .buttons--black {
+  background-color: black;
+}
+
+.changeColor__edits .buttons--blue {
+  background-color: #0098f0;
 }
 
 .changeColor__edits .size {

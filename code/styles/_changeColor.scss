@@ -25,12 +25,26 @@ $myRed: #aa0400;
             cursor: pointer;
             width: 30px;
             height: 30px;
-            background-color: aqua;
             border-radius: 100px;
             outline: none;
         }
 
-        
+        &--red{
+            background-color: $myRed;
+        }
+
+        &--white{
+            background-color: white;
+        }
+
+        &--black{
+            background-color: black;
+        }
+
+        &--blue{
+            background-color: rgb(0, 152, 240);
+        }
+
     }
 
     .size{
@@ -80,7 +94,6 @@ $myRed: #aa0400;
         img{
             justify-content: center;
         }
-
     }
 
     .changeColor__texts{
@@ -88,5 +101,4 @@ $myRed: #aa0400;
         margin-top: -60px;
         width: 85%;
     }
-
 }
