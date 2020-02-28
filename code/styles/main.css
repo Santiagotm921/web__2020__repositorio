@@ -590,7 +590,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  background: black;
+  background: #aa0400;
   width: 100%;
   color: white;
   margin: auto;

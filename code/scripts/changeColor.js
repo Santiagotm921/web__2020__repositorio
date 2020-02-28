@@ -1,5 +1,5 @@
 //Colors
-var black= "#000"
+var black = "#000"
 var red = "#aa0400";
 var white = "#fff";
 var blue = "#0098f0";
@@ -11,10 +11,16 @@ var ancho = window.innerWidth;
 var principal = document.querySelector('.menu');
 var characteristics = document.querySelector('.characteristics');
 var menu = document.querySelector('.menu__container');
-var publiShoe = document.querySelector('.publicity__shoe');
-var h1 = document.querySelector('h1');
 var register = document.querySelector('.register');
 var hamburguer = document.querySelector('.mainnav');
+var bannerTexts = document.querySelector('.bannershoe__texts');
+
+var btnGiant = document.querySelector('.bannershoe__button');
+
+var h1 = document.querySelectorAll('h1');
+var publiShoes = document.querySelectorAll('.publicity__shoe');
+var publiTexts = document.querySelectorAll('.publicity__text');
+
 
 
 //Buttons
@@ -28,8 +34,20 @@ var handleBlack = function () {
     characteristics.style.background = black;
     hamburguer.style.background = red;
     menu.style.background = red;
-    //Preguntar: Si aplico lo mismo para h1, como hacer que coja todos los h1 y no solo 1;
-    //publiShoe.style.background = red;
+    register.style.background = black;
+
+
+    for (let i = 0; i < publiShoes.length; i++) {
+        const shoe = publiShoes[i];
+        shoe.style.background = red;
+    }
+
+    for (let i = 0; i < publiTexts.length; i++) {
+        const textsShoes = publiTexts[i];
+        textsShoes.style.color = white;
+
+    }
+
 }
 
 var handleWhite = function () {
@@ -37,11 +55,23 @@ var handleWhite = function () {
     characteristics.style.background = white;
     hamburguer.style.background = red;
     menu.style.background = red;
-    //Preguntar: Si aplico lo mismo para h1, como hacer que coja todos los h1 y no solo 1;
-    //publiShoe.style.background = red;
+    bannerTexts.style.color = red;
+    btnGiant.style.background = red;
+
+    for (let i = 0; i < publiShoes.length; i++) {
+        const shoe = publiShoes[i];
+        shoe.style.background = red;
+        shoe.style.color = white;
+    }
+
 }
 
-/*btnRed.addEventListener('click', handleRed);
-btnBlue.addEventListener('click', handleBlue);*/
-btnWhite.addEventListener('click', handleWhite); 
+var handleRed = function () {
+    window.location.reload();
+}
+
+
+/*btnBlue.addEventListener('click', handleBlue);*/
+btnRed.addEventListener('click', handleRed);
 btnBlack.addEventListener('click', handleBlack);
+btnWhite.addEventListener('click', handleWhite);

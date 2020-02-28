@@ -1,8 +1,10 @@
+$myRed: #aa0400;
+
 .register{
 
     display: flex;
     text-align: center;
-    background: black;
+    background: $myRed;
     width: 100%;
     color: white;
     margin: auto;
