@@ -13,71 +13,6 @@ body, html {
 
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    width: 60%;
-    justify-content: space-evenly;
-    margin-left: 20px;
-
-}
-
-.menu {
-  background: $myRed;
-  background: linear-gradient(191deg, $myRed 0%, #ff1928 100%);
-  width: 100%;
-
-  &__container {
-    padding: 10px 10px;
-    color: white;
-    height: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 14px;
-  }
-
-  &__logo{
-    width: 50px;
-  }
-}
-
-
-.searcher {
-  display: flex;
-  width: 35%;
-
-  &__container{
-    width: 170px;
-    height: 35px;
-    border: 2px solid white;
-  }
-
-  &__search{
-    font-family: 'Montserrat', sans-serif;
-    width: 135px;
-    height: 35px;
-    background: transparent;
-    padding: 12px 10px;
-    border: none;
-    color: white;
-    outline: none;
-    position: absolute;
-  }
-
-  &__icon{
-    width: 25px;
-    height: 25px;
-    margin: 3px 5px;
-  }
-
-}
-
-::placeholder {
-  color: white;
-  opacity: 60%;
-}
-
 .bannershoe{
     display: flex;
     color: white;
@@ -148,6 +83,7 @@ body, html {
       color: white;
     }
 
+
     &__text{
       margin: 0px 20px;
 
@@ -169,17 +105,25 @@ body, html {
 
   }
 
+  .publicity__shoe--black{
+    background: $myRed;
+    color: white;
+  }
+
+
+  .publicity__shoe--black:hover{
+    background: white;
+
+    span{
+      background: none;
+      color: $myRed;
+    }
+  }
+
+
+
+
 @media (max-width: 930px) {
-
-  .container {
-    justify-content: space-around;
-    flex-direction: row-reverse;
-    margin-left: -20px;
-  }
-
-  .menu__container{
-    background: black;
-  }
 
   .bannershoe{
     flex-wrap: wrap;
@@ -204,3 +148,5 @@ body, html {
 @import 'changeColor';
 @import 'videos';
 @import 'register';
+@import 'menu';
+@import 'social';
