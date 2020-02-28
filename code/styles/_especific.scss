@@ -21,12 +21,6 @@ $myRed: #aa0400;
         width: 100%;
     }
 
-    article{
-        display: flex;
-        margin: 0px 5px;
-    }
-
-
     span{
         font-size: 14px;
         padding: 9px;
@@ -34,107 +28,30 @@ $myRed: #aa0400;
         width: 22%;
         position: absolute;
     }
+}
 
+.slide__duotono{
+    position: relative;
+    width: 100%;
+    height: 98.7%;
+}
+
+.slide__duotono:hover{
     .redColor{
-        width: 103%;
-        height: 96%;
-        margin: -11px;
-        position: absolute;
-        background: $myRed;
-    }
-
-    .span:hover{
-        opacity: 25%;
+        opacity: 60%;
     }
 }
 
+.redColor{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: $myRed;
+    opacity: 0%;
+    top: 0px;
+}
 
-
-@media (max-width: 930px) {
-
-    .slidershow{
-        max-width: 700px;
-        min-width: 400px;
-        overflow: hidden;
-        margin-left: 298px;
-        max-height: 250px;
-        justify-content: center;
-        margin-top: 150px;
-        
-    }
-    
-    .middle{
-        /*position: absolute;*/
-        position: relative;
-        transform: translate(-25%, -50%);
-    }
-
-    span{
-        padding: 0px;
-    }
-
-    .article{
-        display: none;
-    }
-    
-    .slides{
-        
-        width: 500%;
-        height: 500%; 
-        display: flex;
-        justify-content: unset;
-        margin: 0px 0px;
-
-        &__navegation{
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-        
-            .bar{
-                width: 50px;
-                height: 10px;
-                border: 2px solid white;
-                margin: 6px;
-                cursor: pointer;
-                transition: 0.4s;
-            }
-        
-            .bar:hover{
-                background: white;
-            }
-        }
-    }
-    
-    input[name="r"]{
-        position: absolute;
-        visibility: hidden;
-    }
-    
-    .slide{
-        width: 20%;
-        transition: 0.6s;
-
-        img{
-            width: 100%;
-        }
-    }
-    
-    #r1:checked ~ .s1{
-        margin-left: 0;
-    }
-    
-    #r2:checked ~ .s1{
-        margin-left: -20%;
-    }
-    
-    #r3:checked ~ .s1{
-        margin-left: -40%;
-    }
-    
-    #r4:checked ~ .s1{
-        margin-left: -60%;
-    }
-
+.slide__container{
+    display: flex;
+    margin: 0px 5px;  
 }

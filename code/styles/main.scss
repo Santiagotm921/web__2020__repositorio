@@ -46,12 +46,12 @@ body, html {
 
 .searcher {
   display: flex;
+  width: 35%;
 
   &__container{
     width: 170px;
     height: 35px;
     border: 2px solid white;
-    margin-right: 35px;
   }
 
   &__search{
@@ -130,9 +130,8 @@ body, html {
 }
 
 .publicity{
-    /*background: aqua; */
     display: flex;
-    margin: 0px 20px;
+   
     margin-top: -55px;
     color: $myRed;
 
@@ -141,8 +140,8 @@ body, html {
       background: white;
       width: auto;
       align-items: center;
-      justify-content: space-between;
-      margin: 10px;
+      justify-content: center;
+      margin: 5px;
     }
 
     &__shoe:hover{
@@ -151,8 +150,8 @@ body, html {
     }
 
     &__text{
-      margin-left: 20px;
-      padding: 5px;
+      margin: 0px 20px;
+
     }
 
     h2{
@@ -161,7 +160,7 @@ body, html {
 
     img{
       min-width: 50px;
-      width: 270px;
+      width: 280px;
       justify-content: center;
     }
 
