@@ -93,76 +93,74 @@
             alt="photo1">
     </div>
 
-    <div class="slidershow middle">
+    <div class="slides">
 
-        <div class="slides">
+        <div class="slides__mask">
 
-            <div class="slide s1">
+            <article class="slides__container">
+                <div class="slides__duotono">
+                    <img src="./src/specific1.jpg" alt="specific1">
+                    <div class="redColor"></div>
+                </div>
 
-                <article class="slide__container">
-                    <div class="slide__duotono">
-                        <img src="./src/specific1.jpg" alt="specific1">
-                        <div class="redColor"></div>
-                    </div>
+                <span>
+                    <h3>MORE SPIN</h3>
+                    With 406 spikes for more
+                    spin on the ball, Demonskin gives you unbelievable
+                    swerve on the ball.
+                </span>
+            </article>
 
-                    <span>
-                        <h3>MORE SPIN</h3>
-                        With 406 spikes for more
-                        spin on the ball, Demonskin gives you unbelievable
-                        swerve on the ball.
-                    </span>
-                </article>
-            </div>
+            <article class="slides__container">
 
-            <div class="slide">
-                <article class="slide__container">
+                <div class="slides__duotono">
+                    <img src="./src/specific2.jpg" alt="specific2">
+                    <div class="redColor"></div>
+                </div>
 
-                    <div class="slide__duotono">
-                        <img src="./src/specific2.jpg" alt="specific2">
-                        <div class="redColor"></div>
-                    </div>
+                <span>
+                    <h3>PERFECT FIT</h3> The Sockfit collar adjusts
+                    to the unique contours of your foot, ensuring a
+                    perfect fit a optimum support.
+                </span>
+            </article>
 
-                    <span>
-                        <h3>PERFECT FIT</h3> The Sockfit collar adjusts
-                        to the unique contours of your foot, ensuring a
-                        perfect fit a optimum support.
-                    </span>
-                </article>
+            <article class="slides__container">
 
-            </div>
-            <div class="slide">
-                <article class="slide__container">
+                <div class="slides__duotono">
+                    <img src="./src/specific3.jpg" alt="specific3">
+                    <div class="redColor"></div>
+                </div>
 
-                    <div class="slide__duotono">
-                        <img src="./src/specific3.jpg" alt="specific3">
-                        <div class="redColor"></div>
-                    </div>
+                <span>
+                    <h3>ROCK-SOLID STABILITY</h3>An all-new outsole maximizes
+                    ball-control zones, while the controlframe's polyamide-injected layers stabilize movement.
+                </span>
+            </article>
 
-                    <span>
-                        <h3>ROCK-SOLID STABILITY</h3>An all-new outsole maximizes
-                        ball-control zones, while the controlframe's polyamide-injected layers stabilize movement.
-                    </span>
-                </article>
-            </div>
+            <article class="slides__container">
 
-            <div class="slide">
-                <article class="slide__container">
+                <div class="slides__duotono">
+                    <img src="./src/specific4.jpg" alt="specific4">
+                    <div class="redColor"></div>
+                </div>
 
-                    <div class="slide__duotono">
-                        <img src="./src/specific4.jpg" alt="specific4">
-                        <div class="redColor"></div>
-                    </div>
+                <span>
+                    <h3>SAVAGE SILHOUETTE</h3>With an anatomical silhouette accentuated by
+                    the 406 demonic-looking spikes, the new Predator Mutator lets you look and play savage.
+                </span>
+            </article>
 
-                    <span>
-                        <h3>SAVAGE SILHOUETTE</h3>With an anatomical silhouette accentuated by
-                        the 406 demonic-looking spikes, the new Predator Mutator lets you look and play savage.
-                    </span>
-                </article>
-            </div>
+        </div>
+
+        <div class="buttons__container">
+            <button class="slider__btn slider__btn--left"></button>
+            <button class="slider__btn slider__btn--right"></button>
 
         </div>
 
     </div>
+
 
     <section class="characteristics">
         <img src="./src/Recurso 9.png" alt="recurso">
@@ -190,7 +188,10 @@
     <article class="changeColor">
 
         <section class="changeColor__container">
-            <img src="./src/paintershoe.png" alt="changeshoe">
+            <img class="changeColor__shoe" src="./src/paintershoe.png" alt="changeshoe">
+            <img class="changeColor__shoe--yellow" src="./src/paintershoeYellow.png" alt="yellow">
+            <img class="changeColor__shoe--black" src="./src/paintershoeBlack.png" alt="black">
+            <img class="changeColor__shoe--white" src="./src/paintershoeWhite.png" alt="white">
 
             <span class="changeColor__texts">
                 <h1>PREDATOR MUTATOR</h1>
@@ -205,21 +206,12 @@
                     <div class="buttons">
                         <h3>Colores</h3>
 
-                        <button class="buttons--red"></button>
-                        <button class="buttons--white"></button>
-                        <button class="buttons--black"></button>
-                        <button class="buttons--blue"></button>
+                        <button class="buttons--red" title="Red"></button>
+                        <button class="buttons--white" title="White"></button>
+                        <button class="buttons--black" title="Black"></button>
+                        <button class="buttons--yellow" title="Yellow"></button>
                     </div>
 
-                    <div class="size">
-                        <h3>Tamaño</h3>
-                        <button>38</button>
-                        <button>39</button>
-                        <button>41</button>
-                        <button>42</button>
-                        <button>43</button>
-
-                    </div>
                 </span>
             </span>
 
@@ -253,8 +245,8 @@
             <input type="text" placeholder="Apellido:" class="register__camps">
             <input type="text" placeholder="Correo:" class="register__camps">
             <div class="register__other">
-                <input type="text" placeholder="Contraseña:" class="register__camps">
-                <input type="text" placeholder="Repite tu contraseña:" class="register__camps">
+                <input type="password" placeholder="Contraseña:" class="register__camps">
+                <input type="password" placeholder="Repite tu contraseña:" class="register__camps">
             </div>
             <button class="register__button">Continuar</button>
         </div>
@@ -310,22 +302,38 @@
             <li><a href="">Help</a></li>
             <li><a href="">Returns & Exchanges</a></li>
             <li><a href="">Shipping</a></li>
-            <li><a href="">Order Tracker</a></li>
-            <li><a href="">Store Locator</a></li>
-            <li><a href="">Size Charts</a></li>
-            <li><a href="">Gift Card Balance</a></li>
-            <li><a href="">How to Clean</a></li>
-            <li><a href="">Bra Fit Guide</a></li>
+            <li><a href="">OrderTracker</a></li>
+            <li><a href="">StoreLocator</a></li>
+            <li><a href="">SizeCharts</a></li>
+            <li><a href="">CardBalance</a></li>
+            <li><a href="">HowClean</a></li>
+            <li><a href="">BraFitGuide</a></li>
             <li><a href="">Promotions</a></li>
         </ul>
-
-        
     </section>
 
+    <section class="modal">
+        <div class="modal__panel">
+            <p>Revisa tu página. Puede que algo haya cambiado.
+            </p>
+            <button class="modal__btn modalclose">x</button>
+        </div>
+    </section>
 
+    <footer class="footer">
+        <ul>
+            <li><a href="">Data settings</a></li>
+            <li><a href="">Do not sell my personal information</a></li>
+            <li><a href="">PrivacyPolicyTerms and Conditions</a></li>
+            <li><a href="">2020 adidas AmericaInc</a></li>
+
+        </ul>
+    </footer>
 
     <script src="/scripts/hambur.js"></script>
     <script src="/scripts/changeColor.js"></script>
+    <script src="/scripts/changeImg.js"></script>
+    <script src="/scripts/modal.js"></script>
 
 
 </body>

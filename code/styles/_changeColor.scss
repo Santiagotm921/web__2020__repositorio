@@ -1,104 +1,131 @@
 $myRed: #aa0400;
 
-.changeColor{
+.changeColor {
+  display: flex;
+  background: white;
+
+  &__shoe {
+    width: 45%;
+    position: relative;
+    max-width: 70%;
+    min-width: 60%;
+    margin-top: -70px;
+  }
+
+  &__shoe--yellow {
+    display: none;
+    width: 45%;
+    position: relative;
+    max-width: 70%;
+    min-width: 60%;
+    margin-top: -70px;
+  }
+
+  &__shoe--black {
+    display: none;
+    width: 45%;
+    position: relative;
+    max-width: 70%;
+    min-width: 60%;
+    margin-top: -70px;
+  }
+
+  &__shoe--white {
+    display: none;
+    width: 45%;
+    position: relative;
+    max-width: 70%;
+    min-width: 60%;
+    margin-top: -70px;
+  }
+
+  &__container {
     display: flex;
+  }
 
-    &__container{
+  &__edits {
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        outline: none;
+      }
+
+      &--red {
         display: flex;
-    
-    img{
-        width: 45%;
-        position: relative;
-        max-width: 70%;
-        min-width: 60%;
-        margin-top: -70px;
-    }
-}
+        background-color: $myRed;
+      }
 
-&__edits{
-    .buttons{
+      &--white {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        background-color: white;
+      }
 
-        button{
-            cursor: pointer;
-            width: 30px;
-            height: 30px;
-            border-radius: 100px;
-            outline: none;
-        }
-
-        &--red{
-            background-color: $myRed;
-        }
-
-        &--white{
-            background-color: white;
-        }
-
-        &--black{
-            background-color: black;
-        }
-
-        &--blue{
-            background-color: rgb(0, 152, 240);
-        }
-
-    }
-
-    .size{
+      &--black {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        background-color: black;
+      }
 
-        button{
-            font-size: 19px;
-            font-family: 'Montserrat', sans-serif;
-            cursor: pointer;
-            width: 30px;
-            height: 30px;
-            background: none;
-            border-radius: 100px;
-            border: none;
-            color: gray;
-            outline: none;
-        }
+      &--yellow {
+        display: flex;
+        background-color: #f9be24;
+      }
     }
-}
+  }
 
-
-&__texts{
+  &__texts {
     width: 50%;
     text-align: right;
     padding: 20px;
 
-    p{
-        color:grey;       
+    p {
+      color: black;
     }
 
-    h1{
-        color: $myRed;
-        font-size: 2.2rem;
+    h1 {
+      color: $myRed;
+      font-size: 2.2rem;
     }
+  }
 }
 
+.changeColor--black {
+  background: black;
+
+  .changeColor__texts {
+    p {
+      color: white;
+    }
+
+    h3 {
+      color: white;
+    }
+
+    button {
+      color: white;
+    }
+  }
 }
 
 @media (max-width: 930px) {
+  .changeColor__container {
+    flex-wrap: wrap;
+    justify-content: center;
 
-    .changeColor__container{
-        flex-wrap: wrap;
-        justify-content: center;
-
-        img{
-            justify-content: center;
-        }
+    img {
+      justify-content: center;
     }
+  }
 
-    .changeColor__texts{
-        text-align: center;
-        margin-top: -60px;
-        width: 85%;
-    }
+  .changeColor__texts {
+    text-align: center;
+    margin-top: -60px;
+    width: 85%;
+  }
 }

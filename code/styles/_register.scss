@@ -1,52 +1,73 @@
 $myRed: #aa0400;
 
-.register{
+.register {
+  display: flex;
+  text-align: center;
+  background: $myRed;
+  width: 100%;
+  color: white;
+  margin: auto;
+  flex-direction: column;
 
-    display: flex;
-    text-align: center;
-    background: $myRed;
+  &__container {
     width: 100%;
-    color: white;
-    margin: auto;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
 
-    .register__container{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 25px;
-        
+  &__camps {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    background: none;
+    width: 50%;
+    outline: none;
+    height: 60px;
+    padding: 0px 10px;
+    border: solid white 3px;
+  }
+
+  &__other {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+
+    input {
+      display: flex;
+      width: 47%;
     }
-    .register__camps{
-        font-family: 'Montserrat', sans-serif;
-        margin-bottom: 10px;
-        color: white;
-        font-size: 18px;
-        background: none;
-        width: 50%;
-        outline: none;
-        height: 60px;
-        padding: 0px 10px;
-        border: solid white 3px;
-    }
+  }
 
-    .register__other{
-        display: flex;
-        width: 50%;
-        justify-content: space-between;
+  .register__button {
+    font-family: "Montserrat", sans-serif;
+    width: 50%;
+    height: 60px;
+  }
+}
 
+.register--white {
+  background: white;
+  color: black;
 
-        input{
-            display: flex;
-            width: 47%;
-        }
-    }
+  .register__camps {
+    border: solid black 3px;
+    color: black;
+  }
 
+  ::placeholder {
+    color: black;
+  }
+}
 
-    .register__button{
-        font-family: 'Montserrat', sans-serif;
-        width: 50%;
-        height: 60px;
-    }
+.register--black {
+  background: black;
+  color: white;
+
+  .register__camps {
+    border: solid white 3px;
+    color: white;
+  }
 }

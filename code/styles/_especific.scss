@@ -1,57 +1,111 @@
 $myRed: #aa0400;
 
-.slides{
-    width: auto;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around; 
-    margin: 10px 30px;
+.slides {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px 30px;
 
-    input{
-        display: none;
-    }
-}
+  input {
+    display: none;
+  }
 
-.slide{
-    display: flex;
-    width: 25%;
-    
-    img{
-        position: relative;
-        width: 100%;
-    }
-
-    span{
-        font-size: 14px;
-        padding: 9px;
-        color: white;
-        width: 22%;
-        position: absolute;
-    }
-}
-
-.slide__duotono{
+  img {
     position: relative;
     width: 100%;
-    height: 98.7%;
-}
+  }
 
-.slide__duotono:hover{
-    .redColor{
-        opacity: 60%;
-    }
-}
-
-.redColor{
-    width: 100%;
-    height: 100%;
+  span {
+    align-items: center;
+    font-size: 14px;
+    padding: 9px;
+    color: white;
+    width: 20%;
     position: absolute;
-    background: $myRed;
-    opacity: 0%;
-    top: 0px;
+  }
+
+  &__mask {
+    display: flex;
+    width: 100%;
+  }
 }
 
-.slide__container{
+.slides__duotono {
+  position: relative;
+  width: 100%;
+  height: 98.7%;
+}
+
+.slides__duotono:hover {
+  .redColor {
+    opacity: 60%;
+  }
+}
+
+.redColor {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: $myRed;
+  opacity: 0%;
+  top: 0px;
+}
+
+.slides__container {
+  display: flex;
+  margin: 0px 5px;
+}
+
+.slider__btn {
+  position: absolute;
+  bottom: 30px;
+  display: none;
+  border-radius: 100px;
+  height: 30px;
+  justify-content: space-evenly;
+  background: white;
+  border: none;
+  width: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: 150px;
+}
+.slider__btn--right {
+  right: 150px;
+}
+
+@media (max-width: 930px) {
+  .slides {
+    max-width: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+
+    span {
+      width: 100%;
+      font-size: 18px;
+      align-self: center;
+    }
+  }
+
+  .slides__mask {
     display: flex;
-    margin: 0px 5px;  
+  }
+
+  .slides__container {
+    width: 490px;
+    object-fit: cover;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .slider__btn {
+    display: flex;
+  }
 }

@@ -1,12 +1,11 @@
 $myRed: #aa0400;
 
 .container {
-    display: flex;
-    align-items: center;
-    width: 60%;
-    justify-content: space-evenly;
-    margin-left: 20px;
-
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: space-evenly;
+  margin-left: 20px;
 }
 
 .menu {
@@ -24,32 +23,47 @@ $myRed: #aa0400;
     font-size: 14px;
   }
 
-  .menu__container--black{
-        
-    .mainnav a:hover{
-        background: black;
-    }
-  }
-
-  &__logo{
+  &__logo {
     width: 50px;
   }
 }
 
+.menu--black {
+  background: black;
+}
+
+.menu--white {
+  background: white;
+}
+
+.menu__container--black {
+  .mainnav a:hover {
+    background: black;
+  }
+}
+
+.menu__container--white {
+  background: $myRed;
+
+  .mainnav a:hover {
+    background: black;
+  }
+}
 
 .searcher {
   display: flex;
   width: 35%;
 
-  &__container{
+  &__container {
     width: 170px;
     height: 35px;
     border: 2px solid white;
   }
 
-  &__search{
-    font-family: 'Montserrat', sans-serif;
-    width: 135px;
+  &__search {
+    font-family: "Montserrat", sans-serif;
+    max-width: 135px;
+    min-width: 35px;
     height: 35px;
     background: transparent;
     padding: 12px 10px;
@@ -59,12 +73,11 @@ $myRed: #aa0400;
     position: absolute;
   }
 
-  &__icon{
+  &__icon {
     width: 25px;
     height: 25px;
     margin: 3px 5px;
   }
-
 }
 
 ::placeholder {
@@ -73,28 +86,29 @@ $myRed: #aa0400;
 }
 
 @media (max-width: 930px) {
+  .container {
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin-left: -20px;
+  }
 
-    .container {
-      justify-content: space-around;
-      flex-direction: row-reverse;
-      margin-left: -20px;
+  .searcher__search {
+    width: 20%;
+  }
 
+  .menu__container {
+    background: black;
+  }
+
+  .menu__container--black {
+    background: $myRed !important;
+
+    .mainnav {
+      background: $myRed;
     }
+  }
 
-    .menu__container{
-      background: black;      
-    }
-
-    .menu__container--black{
-        background: $myRed !important;
-
-        .mainnav{
-          background: $myRed;
-      }
-
-    }
-
-  
-  
-   
-}  
+  .menu__container--white {
+    background: $myRed;
+  }
+}
