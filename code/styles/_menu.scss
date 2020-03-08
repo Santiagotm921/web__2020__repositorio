@@ -1,9 +1,11 @@
 $myRed: #aa0400;
+$myYellow: #f9be24;
+$myRose: #da0072;
 
 .container {
   display: flex;
   align-items: center;
-  width: 60%;
+  width: 68%;
   justify-content: space-evenly;
   margin-left: 20px;
 }
@@ -36,6 +38,14 @@ $myRed: #aa0400;
   background: white;
 }
 
+.menu--yellow {
+  background: $myYellow;
+}
+
+.menu--rose {
+  background: $myRose;
+}
+
 .menu__container--black {
   .mainnav a:hover {
     background: black;
@@ -44,6 +54,22 @@ $myRed: #aa0400;
 
 .menu__container--white {
   background: $myRed;
+
+  .mainnav a:hover {
+    background: black;
+  }
+}
+
+.menu__container--yellow {
+  background: $myYellow;
+
+  .mainnav a:hover {
+    background: black;
+  }
+}
+
+.menu__container--rose {
+  background: $myRose;
 
   .mainnav a:hover {
     background: black;

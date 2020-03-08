@@ -1,65 +1,96 @@
 $myRed: #aa0400;
+$myYellow: #f9be24;
+$myRose: #da0072;
 
 * {
   box-sizing: border-box;
 }
 
-body, html {
- 
+body,
+html {
   margin: 0;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
 }
 
-.bannershoe{
-    display: flex;
-    color: white;
-    
-    &__texts{
-      /*background: aqua; */
+.bannershoe {
+  display: flex;
+  color: white;
+
+  &__texts {
+    /*background: aqua; */
     margin: 55px 0px 0px 0px;
     padding: 20px;
     width: 600px;
+  }
 
-    }
+  &__myshoe {
+    display: flex;
+    min-width: 300px;
+    max-width: 700px;
+    width: 100%;
+    top: 55px;
+  }
 
-    &__myshoe{
-      /*position: absolute;  left: -55px; max-width: 700px; */
-      min-width: 300px;
-      max-width: 700px;
-      width: 100%;
-      top: 55px;
-    }
+  &__myshoe--black {
+    display: none;
+    min-width: 300px;
+    max-width: 700px;
+    width: 100%;
+    top: 55px;
+  }
 
-    h1{
-      font-size: 3em;
-      margin: 0;
-      /*margin: 100px 0px 0px 0px; */
-    }
+  &__myshoe--white {
+    display: none;
+    min-width: 300px;
+    max-width: 700px;
+    width: 100%;
+    top: 55px;
+  }
 
-    h2{
-      margin: 10px 0;
-    }
+  &__myshoe--yellow {
+    display: none;
+    min-width: 300px;
+    max-width: 700px;
+    width: 100%;
+    top: 55px;
+  }
 
-    &__button{
+  &__myshoe--rose {
+    display: none;
+    min-width: 300px;
+    max-width: 700px;
+    width: 100%;
+    top: 55px;
+  }
 
-      font-family: 'Montserrat', sans-serif;
-      font-size: 13px;
-      width: 200px;
-      height: 50px;
-      background: none;
-      border: solid white 2px;
-      outline: none;
-      color: white;
-      margin: 10px 0px;
-    }
+  h1 {
+    font-size: 3em;
+    margin: 0;
+    /*margin: 100px 0px 0px 0px; */
+  }
 
-    &__button:hover{
-      background: black;
-      color: white;
-      border: none;
-    }
+  h2 {
+    margin: 10px 0;
+  }
+
+  &__button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    width: 200px;
+    height: 50px;
+    background: none;
+    border: solid white 2px;
+    outline: none;
+    color: white;
+    margin: 10px 0px;
+  }
+
+  &__button:hover {
+    background: black;
+    color: white;
+    border: none;
+  }
 }
 
 .bannershoe__texts--white {
@@ -70,98 +101,109 @@ body, html {
   background: $myRed;
 }
 
-.publicity{
+.bannershoe__button--yellow {
+  background: $myYellow;
+}
+
+.bannershoe__button--rose {
+  background: $myRose;
+}
+
+.publicity {
+  display: flex;
+
+  margin-top: -55px;
+  color: $myRed;
+
+  &__shoe {
     display: flex;
-   
-    margin-top: -55px;
-    color: $myRed;
-
-    &__shoe{
-      display: flex;
-      background: white;
-      width: auto;
-      align-items: center;
-      justify-content: center;
-      margin: 5px;
-    }
-
-    &__shoe:hover{
-      background: black;
-      color: white;
-    }
-
-
-    &__text{
-      margin: 0px 20px;
-
-    }
-
-    h2{
-      margin: 0;
-    }
-
-    img{
-      min-width: 50px;
-      width: 280px;
-      justify-content: center;
-    }
-
-    h4{
-      margin: 0;
-    }
-
-  }
-
-  .publicity__shoe--black{
-    background: $myRed;
-    color: white;
-  }
-
-  .publicity__shoe--black:hover{
     background: white;
-
-    span{
-      background: none;
-      color: $myRed;
-    }
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
   }
 
-  .publicity__shoe--white{
-    background: $myRed;
+  &__shoe:hover {
+    background: black;
     color: white;
   }
 
-  .publicity__shoe--white:hover{
-    background: black;
-
+  &__text {
+    margin: 0px 20px;
   }
+
+  &__text--yellow {
+    color: $myYellow;
+  }
+
+  &__text--rose {
+    color: $myRose;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  img {
+    min-width: 50px;
+    width: 280px;
+    justify-content: center;
+  }
+
+  h4 {
+    margin: 0;
+  }
+}
+
+.publicity__shoe--black {
+  background: $myRed;
+  color: black;
+}
+
+.publicity__shoe--black:hover {
+  background: white;
+
+  span {
+    background: none;
+    color: $myRed;
+  }
+}
+
+.publicity__shoe--white {
+  background: $myRed;
+  color: white;
+}
+
+.publicity__shoe--white:hover {
+  background: black;
+}
 
 @media (max-width: 930px) {
-
-  .bannershoe{
+  .bannershoe {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
 
-    &__texts{
-      margin:0px;
+    &__texts {
+      margin: 0px;
       width: 100%;
     }
   }
 
-  .publicity__shoe{
+  .publicity__shoe {
     flex-wrap: wrap;
     margin-top: 65px;
   }
 }
 
-@import 'hamburguer';
-@import 'especific';
-@import 'characteristics';
-@import 'changeColor';
-@import 'videos';
-@import 'register';
-@import 'menu';
-@import 'social';
-@import 'footer';
-@import 'modal';
+@import "hamburguer";
+@import "especific";
+@import "characteristics";
+@import "changeColor";
+@import "videos";
+@import "register";
+@import "menu";
+@import "social";
+@import "footer";
+@import "modal";

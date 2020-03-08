@@ -3,10 +3,11 @@
           box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .bannershoe {
@@ -24,7 +25,41 @@ body, html {
 }
 
 .bannershoe__myshoe {
-  /*position: absolute;  left: -55px; max-width: 700px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 300px;
+  max-width: 700px;
+  width: 100%;
+  top: 55px;
+}
+
+.bannershoe__myshoe--black {
+  display: none;
+  min-width: 300px;
+  max-width: 700px;
+  width: 100%;
+  top: 55px;
+}
+
+.bannershoe__myshoe--white {
+  display: none;
+  min-width: 300px;
+  max-width: 700px;
+  width: 100%;
+  top: 55px;
+}
+
+.bannershoe__myshoe--yellow {
+  display: none;
+  min-width: 300px;
+  max-width: 700px;
+  width: 100%;
+  top: 55px;
+}
+
+.bannershoe__myshoe--rose {
+  display: none;
   min-width: 300px;
   max-width: 700px;
   width: 100%;
@@ -42,7 +77,7 @@ body, html {
 }
 
 .bannershoe__button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   width: 200px;
   height: 50px;
@@ -65,6 +100,14 @@ body, html {
 
 .bannershoe__button--white {
   background: #aa0400;
+}
+
+.bannershoe__button--yellow {
+  background: #f9be24;
+}
+
+.bannershoe__button--rose {
+  background: #da0072;
 }
 
 .publicity {
@@ -99,6 +142,14 @@ body, html {
   margin: 0px 20px;
 }
 
+.publicity__text--yellow {
+  color: #f9be24;
+}
+
+.publicity__text--rose {
+  color: #da0072;
+}
+
 .publicity h2 {
   margin: 0;
 }
@@ -117,7 +168,7 @@ body, html {
 
 .publicity__shoe--black {
   background: #aa0400;
-  color: white;
+  color: black;
 }
 
 .publicity__shoe--black:hover {
@@ -199,12 +250,21 @@ body, html {
 }
 
 .mainnav a:hover {
-  background: #aa0400;
+  background: black;
 }
 
 @media (max-width: 930px) {
   .mainnav {
     display: none;
+  }
+  .mainnav a:hover {
+    background: #aa0400;
+  }
+  .mainnav .mainnav--yellow {
+    background: black;
+  }
+  .mainnav .mainnav--rose {
+    background: black;
   }
 }
 
@@ -256,7 +316,7 @@ body, html {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 10px 30px;
+  margin: 10px 10px;
 }
 
 .slides input {
@@ -284,6 +344,12 @@ body, html {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+}
+
+.containerAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slides__duotono {
@@ -330,14 +396,17 @@ body, html {
 
 .slider__btn--left {
   left: 150px;
+  margin-left: -30px;
 }
 
 .slider__btn--right {
   right: 150px;
+  margin-right: -30px;
 }
 
 @media (max-width: 930px) {
   .slides {
+    width: 100%;
     max-width: 500px;
     overflow: hidden;
     position: relative;
@@ -379,11 +448,30 @@ body, html {
   display: flex;
 }
 
-.characteristics img {
+.characteristics__shoe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   max-width: 70%;
   min-width: 30%;
   top: -1px;
+}
+
+.characteristics__shoe--white {
+  display: none;
+}
+
+.characteristics__shoe--black {
+  display: none;
+}
+
+.characteristics__shoe--yellow {
+  display: none;
+}
+
+.characteristics__shoe--rose {
+  display: none;
 }
 
 .characteristics h1 {
@@ -419,9 +507,17 @@ body, html {
   background: black;
 }
 
+.characteristics--yellow {
+  background: #f9be24;
+}
+
+.characteristics--rose {
+  background: #da0072;
+}
+
 @media (max-width: 930px) {
-  .characteristics img {
-    display: none;
+  .characteristics__shoe {
+    display: none !important;
   }
   .characteristics span {
     width: 100%;
@@ -455,6 +551,15 @@ body, html {
 }
 
 .changeColor__shoe--yellow {
+  display: none;
+  width: 45%;
+  position: relative;
+  max-width: 70%;
+  min-width: 60%;
+  margin-top: -70px;
+}
+
+.changeColor__shoe--rose {
   display: none;
   width: 45%;
   position: relative;
@@ -512,6 +617,7 @@ body, html {
   display: -ms-flexbox;
   display: flex;
   background-color: #aa0400;
+  border: solid 0px;
 }
 
 .changeColor__edits .buttons--white {
@@ -519,6 +625,7 @@ body, html {
   display: -ms-flexbox;
   display: flex;
   background-color: white;
+  border: solid black 1px;
 }
 
 .changeColor__edits .buttons--black {
@@ -526,6 +633,7 @@ body, html {
   display: -ms-flexbox;
   display: flex;
   background-color: black;
+  border: solid white 1px;
 }
 
 .changeColor__edits .buttons--yellow {
@@ -533,6 +641,15 @@ body, html {
   display: -ms-flexbox;
   display: flex;
   background-color: #f9be24;
+  border: solid 0px;
+}
+
+.changeColor__edits .buttons--rose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #da0072;
+  border: solid 0px;
 }
 
 .changeColor__texts {
@@ -722,6 +839,26 @@ img {
   color: white;
 }
 
+.register--yellow {
+  background: #f9be24;
+  color: white;
+}
+
+.register--yellow .register__camps {
+  border: solid white 3px;
+  color: white;
+}
+
+.register--rose {
+  background: #da0072;
+  color: white;
+}
+
+.register--rose .register__camps {
+  border: solid white 3px;
+  color: white;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -729,7 +866,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60%;
+  width: 68%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -770,6 +907,14 @@ img {
   background: white;
 }
 
+.menu--yellow {
+  background: #f9be24;
+}
+
+.menu--rose {
+  background: #da0072;
+}
+
 .menu__container--black .mainnav a:hover {
   background: black;
 }
@@ -779,6 +924,22 @@ img {
 }
 
 .menu__container--white .mainnav a:hover {
+  background: black;
+}
+
+.menu__container--yellow {
+  background: #f9be24;
+}
+
+.menu__container--yellow .mainnav a:hover {
+  background: black;
+}
+
+.menu__container--rose {
+  background: #da0072;
+}
+
+.menu__container--rose .mainnav a:hover {
   background: black;
 }
 
@@ -968,6 +1129,10 @@ img {
   transition: opacity 0.5s ease;
 }
 
+.modal p {
+  color: black;
+}
+
 .modal__btn {
   display: none;
 }
@@ -978,7 +1143,7 @@ img {
   display: flex;
   width: 40%;
   background-color: white;
-  margin: 50px auto;
+  margin: 260px auto;
   padding: 10px;
   border-radius: 20px;
 }

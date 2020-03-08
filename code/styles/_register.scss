@@ -1,4 +1,6 @@
 $myRed: #aa0400;
+$myYellow: #f9be24;
+$myRose: #da0072;
 
 .register {
   display: flex;
@@ -64,6 +66,26 @@ $myRed: #aa0400;
 
 .register--black {
   background: black;
+  color: white;
+
+  .register__camps {
+    border: solid white 3px;
+    color: white;
+  }
+}
+
+.register--yellow {
+  background: $myYellow;
+  color: white;
+
+  .register__camps {
+    border: solid white 3px;
+    color: white;
+  }
+}
+
+.register--rose {
+  background: $myRose;
   color: white;
 
   .register__camps {

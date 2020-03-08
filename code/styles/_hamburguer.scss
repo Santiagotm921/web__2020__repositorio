@@ -1,5 +1,7 @@
 $myRed: #aa0400;
 $breakpoint-sm: 930px;
+$myYellow: #f9be24;
+$myRose: #da0072;
 
 .mainnav {
   display: flex;
@@ -31,11 +33,23 @@ $breakpoint-sm: 930px;
   }
 
   a:hover {
-    background: $myRed;
+    background: black;
   }
 
   @media (max-width: $breakpoint-sm) {
     display: none;
+
+    a:hover {
+      background: $myRed;
+    }
+
+    .mainnav--yellow {
+      background: black;
+    }
+
+    .mainnav--rose {
+      background: black;
+    }
   }
 }
 

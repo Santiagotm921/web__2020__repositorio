@@ -1,14 +1,33 @@
 $myRed: #aa0400;
+$myYellow: #f9be24;
+$myRose: #da0072;
 
 .characteristics {
   background: $myRed;
   display: flex;
 
-  img {
+  &__shoe {
+    display: flex;
     position: relative;
     max-width: 70%;
     min-width: 30%;
     top: -1px;
+  }
+
+  &__shoe--white {
+    display: none;
+  }
+
+  &__shoe--black {
+    display: none;
+  }
+
+  &__shoe--yellow {
+    display: none;
+  }
+
+  &__shoe--rose {
+    display: none;
   }
 
   h1 {
@@ -43,13 +62,22 @@ $myRed: #aa0400;
   &--black {
     background: black;
   }
+
+  &--yellow {
+    background: $myYellow;
+  }
+
+  &--rose {
+    background: $myRose;
+  }
 }
 
 @media (max-width: 930px) {
   .characteristics {
-    img {
-      display: none;
+    &__shoe {
+      display: none !important;
     }
+
     span {
       width: 100%;
       margin: 10px;
